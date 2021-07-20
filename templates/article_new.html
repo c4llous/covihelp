@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% block content %}
-<h1>New article</h1>
+<div class="container" style="margin-bottom: 40px;">
+<h3>* Write here what type of help you need it will be shown publicaly to every user of our website and you will be surely help by someone</h3>
 <form action="" method="post">{% csrf_token %}
-{{ form.as_p }}
+    {{ form|crispy }}
 <button class="btn btn-success ml-2" type="submit">Save</button>
-</form>
+</form></div>
 {% endblock content %}

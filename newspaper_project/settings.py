@@ -25,7 +25,7 @@ SECRET_KEY = '5oif*o@mv!pp5i-0b=uoa5$fa5bb4w256x8@l628(3r&d7rx!a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -133,3 +133,10 @@ EMAIL_HOST_PASSWORD = 'SG.m6WiEsywQm-qtMjAcnCDTg.FkYcBLmYL78ibXpWKmaY2aMtGOU5vhu
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL='freeedfox@gmail.com'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_FINDERS = [
+"django.contrib.staticfiles.finders.FileSystemFinder",
+"django.contrib.staticfiles.finders.AppDirectoriesFinder",
+]

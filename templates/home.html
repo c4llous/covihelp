@@ -1,12 +1,114 @@
+
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 {% block content %}
+
+
 <div class="jumbotron">
-<h1 class="display- ">CoviHelpCentre</h1>
-<p class="lead">Get a quick help and help the needy one's</p>
+<h1 class="display- " style="color:rgb(43, 144, 184)"> <b> COVIHELP</b></h1>
+<p class="lead" style="color:aliceblue;">Get a quick help and help the needy one's</p>
 <p class="lead">
 <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
 role="button">Help others</a>
+<a class="btn btn-primary btn-lg" href="{% url 'article_new' %}"
+role="button">Get Help</a>
 </p>
 </div>
+
+<div class="row">
+    <div class="col-sm card bg-light">
+      <div class="card-body">
+        <h4 class="card-title" style="color:rgb(43, 144, 184)"> <b> Get-Help </b></h4>
+        <p class="card-text">The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.We are here to help you .<br><br></p>
+       <h3> <a href="{% url 'article_new' %}" class="card-link"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+        <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
+      </svg></a> </h3>
+      </div>
+    </div>
+    <div class="col-sm card bg-light">
+      <div class="card-body">
+        <h4 class="card-title" style="color:rgb(43, 144, 184)"> <b> Help-Others </b> </h4>
+        <p class="card-text">The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.</p>
+        <h3> <a href="{% url 'article_list' %}" class="card-link"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+            <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
+          </svg></a> </h3>
+      </div>
+    </div>
+    <div class="col-sm card bg-light">
+      <div class="card-body">
+        <h4 class="card-title" style="color:rgb(43, 144, 184)"> <b> Support-Us</b></h4>
+        <p class="card-text">There are only four kinds of people in the world.
+          Those who have been caregivers.
+          Those who are currently caregivers.
+          Those who will be caregivers, and those who will need a caregiver.<br><br></p>
+          <h3> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+            <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
+          </svg></a> </h3>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<!-- footer   -->
+
+
+<footer class="text-center text-lg-start text-white bg-secondary">
+<div class="container p-4 pb-0">
+<section class="">
+<div class="row">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+  <h6 class="text-uppercase mb-4 font-weight-bold">
+    Helper.com
+  </h6>
+  <p>
+    This is a webiste, where you can help others, or be helped by others.
+    Just create an account and you are good to go!
+  </p>
+</div>
+<!-- Grid column -->
+
+<hr class="w-100 clearfix d-md-none" />
+<hr class="w-100 clearfix d-md-none" />
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+  <h6 class="text-uppercase mb-4 font-weight-bold">
+    Useful links
+  </h6>
+  <p>
+    <a href="{% url 'article_new' %}"class="text-white">Get-Help</a>
+  </p>
+  <p>
+    <a href="{% url 'article_list' %}"class="text-white">Help-Others</a>
+  </p>
+  <p>
+    <a class="text-white"> Support-Us</a>
+  </p>
+  <p>
+    <a class="text-white">About</a>
+  </p>
+</div>
+<hr class="w-100 clearfix d-md-none" />
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+  <p><i class="fas fa-home mr-3"></i> Punjab, Chandigarh Sector 10</p>
+  <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:helper@gmail.com " style="color:aliceblue"> helper@gmail.com</a></p>
+  <p><i class="fas fa-phone mr-3"></i> + 91 72069 89635</p>
+  <p><i class="fas fa-print mr-3"></i> + 93 73077 9091</p>
+</div>
+</div>
+</section>
+<hr class="my-3">
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+<div class="col-md-7 col-lg-8 text-center text-md-start">
+  <div class="p-3">
+  </div>
+</div>
+
+</div>
+</section>
+</div>
+</footer>
+
 {% endblock content %}

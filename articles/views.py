@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 class ArticlesCreateView(LoginRequiredMixin,CreateView):
     model = Articles
     template_name = 'article_new.html'
-    fields = ('title','body','Address',)
+    fields = ('title','body','Address','Contact_no',)
     login_url = 'login'
 
     def form_valid(self, form):
@@ -27,7 +27,7 @@ class ArticlesDetailView(LoginRequiredMixin,DetailView):
 
 class ArticlesUpdateView(LoginRequiredMixin,UpdateView):
     model = Articles
-    fields = ('title','body',)
+    fields = ('title','body','Address','Contact_no',)
     template_name = 'article_edit.html'
     login_url = 'login'
 
@@ -50,4 +50,4 @@ class ArticlesDeleteView(LoginRequiredMixin,DeleteView):
         
 
     
-# Create your views here.
+

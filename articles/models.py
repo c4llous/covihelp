@@ -12,7 +12,7 @@ class Articles(models.Model):
             on_delete=models.CASCADE,
             )
     Address = models.CharField(max_length=255,blank=True)
-    # Phone_no = models.IntegerField(blank=True)        
+    Contact_no = models.IntegerField(blank=True,null=True)        
     def __str__(self):
         return self.title
 
